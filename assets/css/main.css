@@ -330,6 +330,7 @@ body {
   .hero__img {
     width: 280px;
     justify-self: center;
+    border-radius: 5%;
   }
 }
 
@@ -699,6 +700,7 @@ body {
 
   .hero__img {
     justify-self: flex-end;
+    border-radius: 5%;
   }
 }
 
