@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== Favicon ========================-->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <title>Gonzalo Bengoechea | Portfolio Website</title>
-    <!--=================== Google Fonts ====================-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+
+    <!--============ Fontshare ==============-->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
 
 
-    <!--=================== Remixicons ====================-->
+    <!--============ Remixicon ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!--=================== SwiperJS CSS ====================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <!--============ Swiper CSS ===============-->
+    <link rel="stylesheet" href="assets/lib/swiper/css/swiper-bundle.min.css">
 
-    <!--=================== Main CSS ====================-->
+    <!--============ Main CSS ===============-->
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Favicons -->
@@ -30,456 +31,463 @@
 </head>
 
 <body>
-
-    <!--=================== Header ====================-->
+    <!--==================== Header ========================-->
     <header id="header" class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="nav__brand">
-                    <i class="ri-bar-chart-line"></i>Gonzalo
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#hero" class="nav__link">Inicio</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">Sobre Mí</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">Resumen</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#service" class="nav__link">Servicios</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">Projectos</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__toggle">
-                    <i id="nav-toggle" class="ri-menu-3-line"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--=================== main ====================-->
-    <main class="main">
-        <!--=================== Hero ====================-->
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="d-grid hero__wrapper">
-                    <div class="hero__content">
-                        <h1 class="hero__title">Gonzalo<br>Bengoechea.</h1>
-                        <p class="hero__description">Data Scientist - Data Analyst - Bi Analyst</p>
-                        <div class="hero__info">
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">01+</p>
-                                <h2 class="hero__info-title">Años<br>de Experiencia</h2>
-                            </div>
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">05+</p>
-                                <h2 class="hero__info-title">Projectos<br>Completados</h2>
-                            </div>
-<!--                             <div class="hero__info-wrapper">
-                                <p class="hero__info-number">02+</p>
-                                <h2 class="hero__info-title">Companies<br> Worked</h2>
-                            </div> -->
-                        </div>
-                    </div>
-                    <img src="assets/img/hero.jpg" alt="Dave" class="hero__img">
-                </div>
-            </div>
-        </section>
-
-        <!--=================== About ====================-->
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Sobre Mí</h2>
-                    <span class="section__subtitle">Quien soy</span>
-                </div>
-                <div class="d-grid about__wrapper">
-                    <div class="about__content">
-                        <h3 class="about__title">Actualidad y pasado.</h3>
-                        <p class="about__description">Me encuentro cursando el 3er año de la Licenciatura en Ciencia de Datos en la <a
-                            href="https://www.unab.edu.ar/lic-ciencia-datos.html" target="_blank" class="nav__link">Universidad Nacional Guillermo Brown </a>mientras inicio la integración al mercado laboral IT.
-                        </p>
-                        <p class="about__description">Coordiné administrativamente el Centro del Adulto Mayor en la Universidad
-                            Nacional de Lanús, el cual contaba con programas y cursos para personas mayores. Destaco de esa
-                            experiencia la participación en la organización de premios a la trayectoria de profesionales en áreas
-                            como los DDHH, Artes, Ciencias, Música, etc.</p>
+        <nav class="nav container">
+            <a href="#" class="nav__brand"> <i class="ri-bubble-chart-fill"> </i>Gonzalo</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link nav__link--active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#service" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre Mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skill" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Resumen</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Projectos</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="https://drive.google.com/file/d/1l3WVgxG-IeCTL-lhdTwhTl-l7U4vtvjE/view" target="_blank" class="btn btn--primary">Descargar CV</a>
+                    </li>
+                </ul>
+                <span class="nav__close">
+                    <i id="nav-close" class="ri-close-line"></i>
+                </span>
+            </div>
+            <span class="nav__open">
+                <i id="nav-open" class="ri-menu-3-line"></i>
+            </span>
+        </nav>
+    </header>
+
+    <!--==================== Main ========================-->
+    <main class="main">
+        <section id="home" class="home">
+            <div class="d-grid home__wrapper container">
+                <div class="home__content">
+                    <div class="home__social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://www.linkedin.com/in/gonzalobeng/" target="_blank" class="social__link">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://github.com/GonzaloBeng" target="_blank" class="social__link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://twitter.com/GonzaloBeng" target="_blank" class="social__link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="skills">
-                        <h3 class="skills__title">Algunas de las skills que podés esperar de mí:</h3>
-                        <div class="skills__wrapper">
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Programación</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Python</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        R/Rstudio</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Jupyter</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        SQL</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        PowerBi</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Tableau</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Git/Github</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Excel/Sheets</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Hard & Soft</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Álgebra</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Probabilidad</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Estadística</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Resolución</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Comunicación</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Pensamiento Crítico</li>
-                                </ul>
-                            </div>
+                    <div class="home__info">
+                        <h1 class="home__name">Gonzalo<br>
+                            Bengoechea.
+                        </h1>
+                        <p class="home__profession">Data Scientist - Data Analyst - Bi Analyst</p>
+                        <p class="home__description">
+                            Me encuentro en búsqueda de integrar grupos de trabajo que me
+                            permitan seguir desarrollando en el área IT.  
+                        </p>
+                        <div class="home__buttons">
+                            <a href="mailto:gonzalobeng@gmail.com" class="btn btn--outline">Contacto</a>
                         </div>
                     </div>
                 </div>
+                <img src="assets/img/hero.jpg" alt="Gonzalo Bengoechea" class="home__img">
             </div>
         </section>
 
-        <!--=================== Qualification ====================-->
-        <section id="qualification" class="section qualification">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Resumen</h2>
-                    <span class="section__subtitle">Experiencia & Educación</span>
-                </div>
-                <!--============== Professional Experience ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-briefcase-fill"></i>
-                        Experiencia Profesional
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Experience 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Pasante BI en TGV</h3>
-                            <p class="qualification__description">Limpieza y migración de bases de datos, 
-                                elaboración de reportes institucionales, 
-                                dictado de capacitaciones, etc.</p>
-                            <span class="qualification__date">2022 - Presente</span>
-                        </div>
-                        <!-- Experience 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Coord. Administrativo en UNLa</h3>
-                            <p class="qualification__description">Contratación y pago a personal, 
-                                seguimiento de cuentas y pago a proovedores, 
-                                facturación de personal en el sistema AFIP, etc.</p>
-                            <span class="qualification__date">2019 - 2020</span>
-                        </div>
-                        <!-- Experience 3-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Asistente Administrativo en UNLa</h3>
-                            <p class="qualification__description">Preparación de eventos y presentaciones, 
-                                community manager, soporte técnico, 
-                                atención al público, etc.</p>
-                            <span class="qualification__date">2014 - 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <!--============== Education ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-booklet-fill"></i>
-                        Educación
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Education 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Licenciatura en Ciencia de Datos</h3>
-                            <p class="qualification__description">Actualmente me encuentro cursando el 3er año en tiempo y forma en la UNaB.</p>
-                            <span class="qualification__date">2021 - Presente</span>
-                        </div>
-                        <!-- Education 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Full Stack Developer</h3>
-                            <p class="qualification__description">Realicé una introducción al desarrollo web, 
-                                especificamente en HTML, CSS y JavaScript.</p>
-                            <span class="qualification__date">2020 - 2021</span>
-                        </div>
-                        <!-- Education 3-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Bachiller en Economía y Gestión</h3>
-                            <p class="qualification__description">Finalicé mis estudios secundarios con una formación en el área de Economía 
-                                y Gestión de las organizaciones.</p>
-                            <span class="qualification__date">2009 - 2011</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="qualification__footer">
-                    <p class="qualification__footer-text">Si querés ver mi CV completo</p>
-                    <a href="https://drive.google.com/file/d/1l3WVgxG-IeCTL-lhdTwhTl-l7U4vtvjE/view" target="_blank" class="btn btn--primary">Descargar CV</a>
-                </div>
-            </div>
-        </section>
-
-        <!--=================== services ====================-->
+        <!--==================== Service ========================-->
         <section id="service" class="section service">
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Servicios</h2>
-                    <span class="section__subtitle">Lo que se hacer</span>
+                    <p class="section__description">Estas son algunas de las cosas que se hacer.
+                    </p>
                 </div>
-                <div class="d-grid service__wrapper">
-                    <!--========= service card 2 =========-->
+            </div>
+            <div class="d-grid service__wrapper container">
+                <!--========== service  1 =========-->
+                <div class="service__item">
                     <div class="service__card">
                         <div class="service__icon">
                             <i class="ri-database-2-line"></i>
                         </div>
-                        <h3 class="service__title">Gestión</h3>
-                        <a class="service__link">Manejo de prácticas y procedimientos para que los datos
-                            puedan ser preservados, seguros y accesibles sin presentar obstáculos.</a>
+                        <h3 class="service__name">Gestión</h3>
+                        <p class="service__description">Manejo de prácticas y procedimientos para que los datos
+                            puedan ser preservados, seguros y accesibles sin presentar obstáculos.</p>
                     </div>
-                    <!--========= service card 3 =========-->
+                </div>
+                <!--========== service  2 =========-->
+                <div class="service__item">
                     <div class="service__card">
                         <div class="service__icon">
                             <i class="ri-table-line"></i>
                         </div>
-                        <h3 class="service__title">Análisis</h3>
-                        <a class="service__link">Recolección, limpieza 
-                            y remodelación de datos en búsqueda de mejorar en la toma de decisiones.</a>
+                        <h3 class="service__name">Análisis</h3>
+                        <p class="service__description">Recolección, limpieza 
+                            y remodelación de datos en búsqueda de mejorar en la toma de decisiones.</p>
                     </div>
-                    <!--========= service card 1 =========-->
+                </div>
+                <!--========== service  3 =========-->
+                <div class="service__item">
                     <div class="service__card">
                         <div class="service__icon">
                             <i class="ri-line-chart-line"></i>
                         </div>
-                        <h3 class="service__title">Visualización</h3>
-                        <a class="service__link">Creación de visualizaciones de datos 
-                            y Dashboards estáticos e interactivos.</a>
+                        <h3 class="service__name">Visualización</h3>
+                        <p class="service__description">Creación de visualizaciones de datos 
+                            y Dashboards estáticos e interactivos.</p>
                     </div>
-                    <!--========= service card 4 =========-->
+                </div>
+                <!--========== service  4 =========-->
+                <div class="service__item">
                     <div class="service__card">
                         <div class="service__icon">
                             <i class="ri-briefcase-line"></i>
                         </div>
-                        <h3 class="service__title">Análisis<br> de mercado</h3>
-                        <a class="service__link">Curiosidad e iniciativa en conocer proyectos 
-                            de distintos rubros y mercados.</a>
+                        <h3 class="service__name">Análisis<br> de mercado</h3>
+                        <p class="service__description">Curiosidad e iniciativa en conocer proyectos 
+                            de distintos rubros y mercados.</p>
                     </div>
-                    <!--========= service card 5 =========-->
+                </div>
+                <!--========== service  5 =========-->
+                <div class="service__item">
                     <div class="service__card">
                         <div class="service__icon">
                             <i class="ri-git-merge-line"></i>
                         </div>
-                        <h3 class="service__title">Trabajo<br> en equipo</h3>
-                        <a class="service__link">Disfruto trabajar en equipo para crear estratégias beneficiosas para todos.</a>
+                        <h3 class="service__name">Trabajo<br> en equipo</h3>
+                        <p class="service__description">Disfruto trabajar en equipo para crear estratégias beneficiosas para todos.</p>
                     </div>
-                    <!--========= service card 6 =========-->
+                </div>
+                <!--========== service  6 =========-->
+                <div class="service__item">
                     <div class="service__card">
                         <div class="service__icon">
                             <i class="ri-window-line"></i>
                         </div>
-                        <h3 class="service__title">Desarrollo<br> web</h3>
-                        <a class="service__link">Ayudo a crear sitios webs para que principiantes 
-                            y autónomos puedan compartir sus proyectos.</a>
+                        <h3 class="service__name">Desarrollo<br> web</h3>
+                        <p class="service__description">Ayudo a crear sitios webs para que principiantes 
+                            y autónomos puedan compartir sus proyectos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--=================== Projects ====================-->
-        <section id="project" class="section project">
+        <!--==================== About ========================-->
+        <section id="about" class="section about">
+            <div class="d-grid about__wrapper container">
+                <div class="about__content">
+                    <h2 class="about__title">Sobre Mí</h2>
+                    <p class="about__description">Me encuentro cursando el 3er año de la <b>Licenciatura en Ciencia de Datos</b> en la <b>Universidad Nacional Guillermo Brown</b>
+                        mientras inicio mi integración al mercado laboral IT.</p>
+                    <p class="about__description">Anteriormente coordiné administrativamente el Centro del Adulto Mayor en la Universidad
+                        Nacional de Lanús, el cual contaba con programas y cursos para personas mayores. Destaco de esa
+                        experiencia la participación en la organización de premios a la trayectoria de profesionales en áreas
+                        como los DDHH, Artes, Ciencias, Música, etc.</p>
+                    <a href="https://drive.google.com/file/d/1l3WVgxG-IeCTL-lhdTwhTl-l7U4vtvjE/view" target="_blank" class="btn btn--primary">Descargar CV</a>
+                </div>
+                <img src="assets/img/about.jpeg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--==================== Skills ========================-->
+        <section id="skill" class="skill section">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Projectos</h2>
-                    <span class="section__subtitle">Mis trabajos recientes</span>
+                    <h2 class="section__title">Mis Skills</h2>
+                    <p class="section__description">Algunas de las skills que podés esperar de mí:
+                    </p>
                 </div>
-                <div class="d-grid project__wrapper">
-                    <!--============== project 1 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/portfolio-1.jpg" alt="Premier League 20-21" class="project__img">
-                        <h3 class="project__title">Premier League 20-21</h3>
-                        <p class="project__description">EDA (Analisís Exploratorio de Datos) con Python y diversas librerias para obtener 
-                            información relevante de la temporada 20-21 de la Premier League.</p>
-                        <a href="https://github.com/GonzaloBeng/EDA_PremierLeague" target="_blank" class="project__link">Ver Projecto
-                            <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="d-grid skill__wrapper container">
+                <div class="section-bg"></div>
+                <!--=========== skill item 1 ===========-->
+                <div class="skill__item">
+                    <div class="skill__card">
+                        <img src="assets/img/skill1.png" alt="" class="skill__img">
+                        <h3 class="skill__name">Programación</h3>
+                        <ul class="skill__list">
+                            <li class="skill__item">Python - R/Rstudio</li>
+                            <li class="skill__item">PowerBi - Tableau</li>
+                            <li class="skill__item">Jupyter - SQL</li>
+                            <li class="skill__item">Git - Github</li>
+                            <li class="skill__item">HTML - CSS</li>
+                        </ul>
                     </div>
-                    <!--============== project 2 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/portfolio-3.jpg" alt="Premier League 21-22 " class="project__img">
-                        <h3 class="project__title">Premier League 21-22</h3>
-                        <p class="project__description">Reporte en PowerBi sobre 
-                            cada equipo a través de los meses de la temporada de la Premier League 21-22.</p>
-                        <a href="https://github.com/GonzaloBeng/PremierLeague21-22" target="_blank" class="project__link">Ver Projecto
-                            <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!--=========== skill item 2 ===========-->
+                <div class="skill__item">
+                    <div class="skill__card">
+                        <img src="assets/img/skill2.png" alt="" class="skill__img">
+                        <h3 class="skill__name">Soft</h3>
+                        <ul class="skill__list">
+                            <li class="skill__item">Pensamiento Crítico</li>
+                            <li class="skill__item">Trabajo en equipo</li>
+                            <li class="skill__item">Comunicación</li>
+                            <li class="skill__item">Resolución</li>
+                        </ul>
                     </div>
-                    <!--============== project 3 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/portfolio-2.jpg" alt="Fulham FC" class="project__img">
-                        <h3 class="project__title">Fulham FC Championship 21-22</h3>
-                        <p class="project__description">Reporte en PowerBi analizando estadísticas de cada jugador 
-                            del plantel del Fulham en la temporada de su ascenso en 21-22.</p>
-                        <a href="https://github.com/GonzaloBeng/FulhamChampionship21-22" target="_blank" class="project__link">Ver Projecto
-                            <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!--=========== skill item 3 ===========-->
+                <div class="skill__item">
+                    <div class="skill__card">
+                        <img src="assets/img/skill3.png" alt="" class="skill__img">
+                        <h3 class="skill__name">Hard</h3>
+                        <ul class="skill__list">
+                            <li class="skill__item">Probabilidad</li>
+                            <li class="skill__item">Estadística</li>
+                            <li class="skill__item">Álgebra</li>
+                        </ul>
                     </div>
-                     <!--============== project 4 =============-->
-                    <!--  <div class="project__content">
-                        <img src="assets/img/project3.jpg" alt="Ecommerce Website" class="project__img">
-                        <h3 class="project__title">Ecommerce Website</h3>
-                        <p class="project__description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere,esse ullam
-                            nemo velit voluptatum excepturi.</p>
-                        <a href="#" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div> -->
-                     <!--============== project 5 =============-->
-                    <!--  <div class="project__content">
-                        <img src="assets/img/project3.jpg" alt="Ecommerce Website" class="project__img">
-                        <h3 class="project__title">Ecommerce Website</h3>
-                        <p class="project__description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere,esse ullam
-                            nemo velit voluptatum excepturi.</p>
-                        <a href="#" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div> -->
-                     <!--============== project 6 =============-->
-                    <!--  <div class="project__content">
-                        <img src="assets/img/project3.jpg" alt="Ecommerce Website" class="project__img">
-                        <h3 class="project__title">Ecommerce Website</h3>
-                        <p class="project__description">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere,esse ullam
-                            nemo velit voluptatum excepturi.</p>
-                        <a href="#" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div> -->
                 </div>
             </div>
         </section>
 
-        <!--=================== Testimonials ====================-->
-        <!-- <section id="testimonial" class="section testimonial">
+        <!--==================== Experience ========================-->
+        <section id="experience" class="section experience">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Testimonials</h2>
-                    <span class="section__subtitle">What my clients say</span>
+                    <h2 class="section__title">Resumen</h2>
+                    <p class="section__description">Experiencia & Educación.
+                    </p>
                 </div>
-                <div class="testimonial__wrapper swiper">
-
-                    <div class="swiper-wrapper"> -->
-                        <!--========= testimonial 1 ============ -->
-                        <!-- <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial1.jpg" alt="Natasha Smith" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">Natasha Smith</h3>
-                                <span class="testimonial__occupation">UI/UX Designer at Dribbble</span>
+            </div>
+            <div class="d-grid experience__wrapper container">
+                <div class="section-bg"></div>
+                <!--============= Education ===============-->
+                <div class="experience__group">
+                    <div class="experience__group-wrapper d-grid">
+                        <!--========= Education 1 =================-->
+                        <div class="experience__item">
+                            <div class="experience__card">
+                                <h3 class="experience__title">
+                                    <i class="ri-book-fill"></i>
+                                    Educación
+                                </h3>
+                                <div class="experience__header">
+                                    <h3 class="experience__name">Licenciatura en Ciencia de Datos</h3>
+                                    <span class="experience__date">2021 - Presente</span>
+                                </div>
+                                <p class="experience__description">
+                                    Actualmente me encuentro cursando el 3er año en tiempo y forma en la UNaB.
+                                </p>
+                                <span class="experience__place">Universidad Nacional Guillermo Brown</span>
                             </div>
-                        </div> -->
-                        <!--========= testimonial 2 ============ -->
-                        <!-- <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial2.jpg" alt="John Clarke" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">John Clarke</h3>
-                                <span class="testimonial__occupation">Web Developer at Facebook</span>
+                        </div>
+                        <!--========= Education 2 =================-->
+                        <div class="experience__item">
+                            <div class="experience__card">
+                                <h3 class="experience__title">
+                                    <i class="ri-book-fill"></i>
+                                    Educación
+                                </h3>
+                                <div class="experience__header">
+                                    <h3 class="experience__name">Full Stack Developer</h3>
+                                    <span class="experience__date">2020 - 2021</span>
+                                </div>
+                                <p class="experience__description">
+                                    Realicé una introducción al desarrollo web, 
+                                especificamente en HTML, CSS y JavaScript.
+                                </p>
+                                <span class="experience__place">APX School</span>
                             </div>
-                        </div> -->
-                        <!--========= testimonial 3 ============ -->
-                        <!-- <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial3.jpg" alt="Emily Walker" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">Emily Walker</h3>
-                                <span class="testimonial__occupation">Backend Developer at Google
-                                </span>
+                        </div>
+                        <!--========= Education 3 =================-->
+                        <div class="experience__item">
+                            <div class="experience__card">
+                                <h3 class="experience__title">
+                                    <i class="ri-book-fill"></i>
+                                    Educación
+                                </h3>
+                                <div class="experience__header">
+                                    <h3 class="experience__name">Bachiller en Economía y Gestión</h3>
+                                    <span class="experience__date">2009 - 2011</span>
+                                </div>
+                                <p class="experience__description">
+                                    Finalicé mis estudios secundarios con una formación en el área de Economía 
+                                y Gestión de las organizaciones.
+                                </p>
+                                <span class="experience__place">Instituto San José</span>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </section> -->
-
-        <!--=================== Contact ====================-->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <div class="d-grid contact__wrapper">
-                    <div class="contact__content">
-                        <h2 class="contact__title">Crees que podemos trabajar juntos? Hablemos.</h2>
-                        <p class="contact__description">
-                            Si crees que puedo sumar a tu equipo o proyecto, trabajar con herramientas que manejo 
-                            y ayudarme a continuar en la exploraración de nuevas aplicaciones y rubros no dudes en escribirme.
-                        </p>
-                    </div>
-                    <div class="contact__btn">
-                        <a href="mailto:gonzalobeng@gmail.com" target="_blank" class="btn btn--secondary">Contacto</a>
+                <!--============= Work Experience ===============-->
+                <div class="experience__group">
+                    <div class="experience__group-wrapper d-grid">
+                        <!--========= Work Experience 1 =================-->
+                        <div class="experience__item">
+                            <div class="experience__card">
+                                <h3 class="experience__title">
+                                    <i class="ri-briefcase-fill"></i>
+                                    Experiencia Profesional
+                                </h3>
+                                <div class="experience__header">
+                                    <h3 class="experience__name">Pasante BI en TGV</h3>
+                                    <span class="experience__date">2022 - Presente</span>
+                                </div>
+                                <p class="experience__description">
+                                    Limpieza y migración de bases de datos, 
+                                elaboración de reportes institucionales, dictado de capacitaciones, etc.
+                                </p>
+                                <span class="experience__place">TGV - Excelencia en Soluciones Informáticas</span>
+                            </div>
+                        </div>
+                        <!--========= Work Experience 2 =================-->
+                        <div class="experience__item">
+                            <div class="experience__card">
+                                <h3 class="experience__title">
+                                    <i class="ri-briefcase-fill"></i>
+                                    Experiencia Profesional
+                                </h3>
+                                <div class="experience__header">
+                                    <h3 class="experience__name">Coord. Administrativo</h3>
+                                    <span class="experience__date">2019 - 2020</span>
+                                </div>
+                                <p class="experience__description">
+                                    Contratación y pago a personal, 
+                                seguimiento de cuentas y pago a proovedores, facturación de personal en el sistema AFIP, etc.
+                                </p>
+                                <span class="experience__place">Universidad Nacional de Lanús</span>
+                            </div>
+                        </div>
+                        <!--========= Work Experience 3 =================-->
+                        <div class="experience__item">
+                            <div class="experience__card">
+                                <h3 class="experience__title">
+                                    <i class="ri-briefcase-fill"></i>
+                                    Experiencia Profesional
+                                </h3>
+                                <div class="experience__header">
+                                    <h3 class="experience__name">Asistente Administrativo</h3>
+                                    <span class="experience__date">2014 - 2019</span>
+                                </div>
+                                <p class="experience__description">
+                                    Preparación de eventos y presentaciones, 
+                                community manager, soporte técnico, atención al público, etc.
+                                </p>
+                                <span class="experience__place">Universidad Nacional de Lanús</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <!--=================== footer ====================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="d-grid footer__wrapper">
-                <div class="footer__content">
-                    <h4 class="footer__title">Seguime</h4>
-                    <ul class="footer__social-list">
-                        <li class="footer__social-item">
-                            <a href="https://www.linkedin.com/in/gonzalobeng/" target="_blank" class="footer__social-link">
-                                <i class="ri-linkedin-fill"></i>
+
+        <!--==================== Portfolio ========================-->
+        <section id="portfolio" class="section porfolio">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Projectos</h2>
+                    <p class="section__description">Mis trabajos recientes
+                    </p>
+                </div>
+            </div>
+            <div class="d-grid portfolio__wrapper container">
+                <!--============== project 1 ================-->
+                <div class="portfolio__project">
+                    <img src="assets/img/portfolio-1.jpg" alt="Premier League 20-21" class="portfolio__img">
+                    <div class="portfolio__content">
+                        <div class="portfolio__info">
+                            <h3 class="portfolio__name">Premier League 20-21</h3>
+                            <span class="portfolio__category">EDA realizado con Python</span>
+                        </div>
+                        <a href="https://github.com/GonzaloBeng/EDA_PremierLeague/blob/master/EDA%20Premier%20League%2020-21.ipynb" target="_blank" class="portfolio__link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--============== project 2 ================-->
+                <div class="portfolio__project">
+                    <img src="assets/img/portfolio-3.jpg" alt="Premier League 21-22" class="portfolio__img">
+                    <div class="portfolio__content">
+                        <div class="portfolio__info">
+                            <h3 class="portfolio__name">Premier League 21-22</h3>
+                            <span class="portfolio__category">Reporte en PowerBi</span>
+                        </div>
+                        <a href="https://github.com/GonzaloBeng/PremierLeague21-22" target="_blank" class="portfolio__link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--============== project 3 ================-->
+                <div class="portfolio__project">
+                    <img src="assets/img/portfolio-2.jpg" alt="Fulham FC" class="portfolio__img">
+                    <div class="portfolio__content">
+                        <div class="portfolio__info">
+                            <h3 class="portfolio__name">Fulham FC<br> Championship 21-22</h3>
+                            <span class="portfolio__category">Reporte en PowerBi</span>
+                        </div>
+                        <a href="https://github.com/GonzaloBeng/FulhamChampionship21-22" target="_blank" class="portfolio__link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--==================== Footer ========================-->
+    <footer class="footer section">
+        <div class="footer__wrapper container">
+            <div class="footer__content">
+<!--                 <span class="footer__subtitle">Información</span> -->
+                <h2 class="footer__title">Trabajemos juntos</h2>
+                <p class="footer__description">Si crees que puedo sumar a tu equipo o proyecto, trabajar con herramientas que manejo 
+                    y ayudarme a continuar en la exploración de nuevas aplicaciones y rubros no dudes en escribirme.</p>
+                <a href="#" class="btn--line">Contacto</a>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/in/gonzalobeng/" target="_blank" class="social__link">
+                                <i class="ri-linkedin-line"></i>
                             </a>
                         </li>
-                        <li class="footer__social-item">
-                            <a href="https://twitter.com/GonzaloBeng" target="_blank" class="footer__social-link">
-                                <i class="ri-twitter-fill"></i>
+                        <li class="social__item">
+                            <a href="https://github.com/GonzaloBeng" target="_blank" class="social__link">
+                                <i class="ri-github-line"></i>
                             </a>
                         </li>
-                        <li class="footer__social-item">
-                            <a href="https://github.com/GonzaloBeng" target="_blank" class="footer__social-link">
-                                <i class="ri-github-fill"></i>
+                        <li class="social__item">
+                            <a href="https://twitter.com/GonzaloBeng" target="_blank" class="social__link">
+                                <i class="ri-twitter-line"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Email</h4>
-                    <a href="mailto:gonzalobeng@gmail.com" class="footer__contact">GonzaloBeng@gmail.com</a>
-                </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Ubicación</h4>
-                    <a class="footer__contact">Buenos Aires, Arg.</a>
-                </div>
+                <a href="mailto:gonzalobeng@gmail.com" class="footer__contact-item">GonzaloBeng@gmail.com</a>
+                <a class="footer__contact-item">Buenos Aires, Argentina</a>
             </div>
-            <p class="footer__copyright">&copy; 2023 Luís Sitoe. All Rights Reserved</p>
         </div>
+        <p class="footer__copyright container">&copy; Copyright Taurus Code 2023. All Rights Reserved</p>
     </footer>
+    <a href="#" class="scrolltop" id="scrolltop">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!--============ Swiper  ===============-->
+    <script src="assets/lib/swiper/js/swiper-bundle.min.js"></script>
 
-    <!--=================== SwiperJS  ====================-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--============ ScrollReveal ===============-->
+    <script src="assets/lib/scrollreveal/scrollreveal.min.js"></script>
 
-    <!--=================== ScrollReveal ==================-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=================== Main JS ====================-->
+    <!--============ Main Js ===============-->
     <script src="assets/js/main.js"></script>
 </body>
 

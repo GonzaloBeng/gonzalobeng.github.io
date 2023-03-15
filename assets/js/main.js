@@ -1,91 +1,109 @@
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navItem = document.querySelectorAll(".nav__item"),
-  header = document.getElementById("header");
+const header = document.getElementById("header"),
+  navMenu = document.getElementById("nav-menu"),
+  navOpen = document.getElementById("nav-open"),
+  navClose = document.getElementById("nav-close"),
+  navLinks = document.querySelectorAll(".nav__link");
 
-// open and close menu
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav__menu--open");
-  changeIcon();
-});
-
-// close the menu when the user clicks the nav links
-navItem.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (navMenu.classList.contains("nav__menu--open")) {
-      navMenu.classList.remove("nav__menu--open");
-    }
-    changeIcon();
-  });
-});
-
-// Change nav toggle icon
-function changeIcon() {
-  if (navMenu.classList.contains("nav__menu--open")) {
-    navToggle.classList.replace("ri-menu-3-line", "ri-close-line");
-  } else {
-    navToggle.classList.replace("ri-close-line", "ri-menu-3-line");
-  }
-}
-
-// Testimonial Slide
-
-const testimonialSlide = new Swiper(".testimonial__wrapper", {
-  loop: true,
-  spaceBetween: 30,
-  centeredSlides: true,
-  effect: "coverflow",
-  grabCursor: true,
-  slidesPerView: 1,
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  breakpoints: {
-    520: {
-      slidesPerView: "auto",
-    },
-  },
-});
-
-// header scroll animation
+/* Change header on scroll
+---------------------------------------*/
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 40) {
+  if (window.scrollY > 100) {
     header.classList.add("header--scroll");
   } else {
     header.classList.remove("header--scroll");
   }
 });
 
-// ScrollReveal animations
-const sr = ScrollReveal({
-  duration: 2000,
-  distance: "100px",
-  delay: 400,
-  reset: false,
+/* Navigation Menu
+---------------------------------------*/
+
+// Open
+navOpen.addEventListener("click", () => {
+  navMenu.classList.add("nav__menu--open");
 });
 
-sr.reveal(".hero__content, .about__content");
-sr.reveal(".hero__img", { origin: "top" });
+// Close
+navClose.addEventListener("click", () => {
+  navMenu.classList.remove("nav__menu--open");
+});
+
+// Close the nav menu when the user clicks on each nav link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("nav__menu--open");
+  });
+});
+
+/* 
+Active link on scroll section 
+-------------------------------------*/
+function addActiveLink() {
+  const section = document.querySelectorAll("section[id]");
+  section.forEach((section) => {
+    const scrollY = window.scrollY,
+      sectionTop = section.offsetTop - 100,
+      sectionHeight = section.offsetHeight,
+      sectionId = section.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__link[href*=" + sectionId + "]")
+        .classList.add("nav__link--active");
+    } else {
+      document
+        .querySelector(".nav__link[href*=" + sectionId + "]")
+        .classList.remove("nav__link--active");
+    }
+  });
+}
+
+window.addEventListener("scroll", addActiveLink);
+
+/* 
+Scrolltop 
+----------------------------------------------*/
+const scrolltop = document.getElementById("scrolltop");
+
+function showScrollTop() {
+  if (window.scrollY > 150) {
+    scrolltop.classList.add("scrolltop--show");
+  } else {
+    scrolltop.classList.remove("scrolltop--show");
+  }
+}
+
+window.addEventListener("scroll", showScrollTop);
+
+/* 
+Testimonial Swiper
+----------------------------------------------*/
+const testimonialSwiper = new Swiper(".testimonial__wrapper", {
+  loop: true,
+  spaceBetween: 40,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: ".swiper__next",
+    prevEl: ".swiper__prev",
+  },
+});
+
+/* 
+ScrollReveal
+----------------------------------------------*/
+const sr = ScrollReveal({
+  distance: "100px",
+  duration: 1500,
+  delay: 200,
+  reset: true,
+});
 
 sr.reveal(
-  ".hero__info-wrapper, .skills__title, .skills__content, .qualification__name, .qualification__item, .service__card, .project__content, .testimonial__wrapper, .footer__content",
-  {
-    delay: 500,
-    interval: 100,
-  }
+  ".home__content, .about__img, .testimonial__wrapper, .footer__wrapper"
 );
-
-sr.reveal(".qualification__footer-text, .contact__content", {
-  origin: "left",
-});
-
-sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });
+sr.reveal(".home__img, .about__content", { origin: "top" });
+sr.reveal(
+  ".service__item, .skill__item, .experience__group, .portfolio__project, .blog__card",
+  { interval: 100 }
+);
